@@ -14,11 +14,15 @@ body{
     content: "";
 }
 
+/******** DEBUG LIST ******/
+.debug header { 
+    height:4rem ;
+    background-color: aquamarine;
+}
+
 /********* HEADER ******/
 header{
     width: 100vw;
-    height:4rem ;
-    background-color: aquamarine;
     display: inline-block;
     line-height:3rem ;
     vertical-align: middle;
@@ -56,3 +60,102 @@ float: left;
 header nav{
     vertical-align: middle;
 }
+/* /header_site */
+
+/* ****BUSINESS BOX *********/
+.business_box{
+    width: 100vw;
+    height: 36rem;
+    background-color: rgba(180, 208, 231, 1);
+    display: inline-block; 
+}
+
+.business_box_content{
+    background-color: darkseagreen;
+    height: 34rem;
+    width: 80%;
+    margin: 3rem auto ;
+}
+
+.business_box_content .maintitle{
+    width: 100%;
+    height: 20%;
+    background-color: red;
+    float: left;
+    font-size: 3rem;
+    margin-top: 0px;
+    margin-bottom: 60px;
+   }
+
+.business_box_content .info_business{
+    width: 30%;
+    height: 190px;
+    background-color: rosybrown;
+    float: left;
+    
+}
+/* .business_box_content .jumbo_img{
+    background-color: deepskyblue;
+    height: 31rem;
+    width: 54rem;
+    float: left;
+    background-size: cover;
+    margin: 38px;
+} */
+
+.jumbo_img{
+    width: 70%;
+    float: left;
+    }
+.jumbo_img> img{
+     width: 100%;
+     height: auto; }
+
+    /* /business box */
+
+    /******SECTION PLAN ********/
+
+
+.plan_box{
+    width: 100vw;
+    height: 90rem;
+
+   
+    background-color: brown;
+}
+
+.container{
+    width: 75%;
+    margin: 6rem auto;
+}
+
+.container > h2{
+    width: 100%;
+    text-align: center;
+}
+.plan_type p{
+    text-align: center;
+    width: 100%;
+    height: 1rem;
+    background-color: yellowgreen;
+}
+
+.row{
+    width: 100%;
+    height:auto;
+
+}
+.col_33{
+    float: left;
+    width: 30%;
+    margin-left: 20px;
+    /* padding: 0 1rem;
+    margin: 0 -1rem; */
+    height: 20rem;
+    background-color: darkviolet;
+    border:tomato solid;
+}
+.col_33 div{
+    width: 33%;
+}
+
