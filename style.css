@@ -9,6 +9,8 @@ body{
     font-family: 'Open Sans',sans-serif;
     min-width: 1440px;
 }
+
+/* **min.width: si adatta a qualsiasi risoluzione facilmente** */
 .clearfix::after{
     clear: both;
     display: table;
@@ -16,106 +18,115 @@ body{
 }
 
 /******** DEBUG LIST ******/
-.debug header { 
-    height:4rem ;
-    background-color: aquamarine;
-}
+
 
 /* common rules */
 p{
-    font-size: 22px
+    font-size: 20px;
 }
 
 li{
     font-size: 22px;
+    list-style: none;
 }
 
 /********* HEADER ******/
 header{
-    width: 100vw;
-    display: inline-block;
-    line-height:3rem ;
-    vertical-align: middle;
+    width: 100%;
+    line-height:4rem ;
+    height: 4rem;
     font-size: 23px;
+    text-align: center;
 }
 
 .logo_site{
     width: 10%;
-    
     float: left;
-    line-height:3rem;
-    vertical-align: middle;
-    margin-left: 1px;
-
+    /* line-height:4rem;  questa info è già contenuta nell'header*/
 }
-/* .logo{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform: translate (-50%, -50%);} */
-    
-
-
 
 .left-nav{
     width: 45%;
-    background-color:cornflowerblue;
     text-align: left;
     float:left;
 }
 .right-nav{
     width: 45%;
-background-color: darkcyan;
 text-align: right;
 float: left;
+}
+.start{
+    background-color:rgba(0, 97, 255, 1) ;
+    color: white;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    text-decoration: none;
 }
 header li{
     list-style: none;
     display: inline;
     padding: 8px;
+    margin: 23px;
 }
 
 header a{
     text-decoration: none;
 }
 
-header nav{
-    vertical-align: middle;
-}
 /* /header_site */
 
 /* ****BUSINESS BOX *********/
-.business_box,{
+.business_box{
     width: 100vw;
-    height: 41rem;
-    background-color: rgba(180, 208, 231, 1);
-    display: inline-block; 
+    height: 59rem;
+    background-color:rgba(180, 208, 231, 1);
+    display:inline-block; 
 }
 
 .business_box_content{
-    background-color: darkseagreen;
-    height: 36rem;
-    width: 90%;
-    margin: 3rem auto ;
+    height: 50rem;
+    width: 80%;
+    margin: 6rem auto;
 }
 
 .business_box_content .maintitle{
     width: 100%;
     height: 20%;
-    background-color: red;
     float: left;
-    font-size: 4rem;
-    margin-top: -17px;
-    margin-bottom: 98px;
+    font-size: 5.8rem;
+    margin-top: -14px;
+    margin-bottom: 200px;
    }
 
 .business_box_content .info_business{
-    width: 30%;
-    height: 190px;
-    background-color: rosybrown;
-    float: left;
-    
+    width: 20%;
+    height: 68%;
+    float: left;  
+    margin-right: 3%;
 }
+.info_business> .first_text{
+    float: left;
+
+}
+.info_business> a{
+    float: left;
+    margin-top: 4rem;
+
+}
+
+.info_business> .icon{
+    float: left;
+    font-size: 105px;
+
+}
+.info_business>.second_text{
+    float: left;
+    padding: 5px;
+    width: 100%
+}
+
 /* .business_box_content .jumbo_img{
     background-color: deepskyblue;
     height: 31rem;
@@ -126,7 +137,7 @@ header nav{
 } */
 
 .jumbo_img{
-    width: 70%;
+    width: 63%;
     float: left;
     }
 .jumbo_img> img{
@@ -138,50 +149,89 @@ header nav{
     /******SECTION PLAN ********/
 
 .plan_box, .dropbox_operation,{
-    width: 100vw;
+    width: 100%;
     height: 59rem;
-    background-color: brown;
 }
 
-.container{
-    width: 75%;
-    margin: 8rem auto;
+.container_plan{
+    width: 60%;
+    margin: 11rem auto;
 }
+
 
 .container > h2{
     width: 100%;
     text-align: center;
+    margin-left: 18px;
 }
 .plan_type {
     text-align: center;
     width: 100%;
-    height: 1.5rem;
-    background-color: yellowgreen;
-    border:darkgreen solid;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+    
+    border:lightgray 1px solid;
 }
+.plan_box h2{
+    font-size: 3rem;
+    margin-left: 30px;
+    height: 4rem;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+}
+.plan_box h3{
+    font-size: 28px;
+    margin-top: 1.5rem;
+}
+
 .plan_type>li{
     list-style: none;
     display: inline;
     padding: 8px;
+    
+}
+.plan_type>ul{
+    list-style: none;
+    display: inline;
+    padding: 8px;
+    margin: 10px 0px 0px 0px;
+    /* list-style-image: url(./img/check-solid.svg); */
+}
+li .fa-check{
+    color: rgba(27, 113, 255, 1);
+}
+    
+
+input{
+    margin-left: 37px;
+    font-size: 2rem;
+    
 }
 
 .row{
     width: 100%;
     height:auto;
+    margin-top: 2rem;
 
 }
 .col_33{
     float: left;
-    width: 30%;
-    margin-left: 20px;
-    /* padding: 0 1rem;
-    margin: 0 -1rem; */
-    height: 20rem;
-    background-color: darkviolet;
-    border:tomato solid;
+    width: 27%;
+    min-height: 38rem;
+    border: lightgray 1px solid;
+    line-height: 3.5rem;
+    margin:0rem 1.5rem;
+    padding: 22px;
+   
 }
 .col_33 div{
     width:100%;
+    padding: 0.5rem;
+}
+
+.plan_box> .col_33{
+    line-height: 4rem;
 }
 /* /section plan */
 
@@ -189,8 +239,10 @@ header nav{
 
 
 .plan_type_team{
-    width: 100%%;
+    width: 75%;
     text-align: center;
+    border: lightgray 1px solid;
+    margin: 0 auto
 }
 .row{
     width: 100%;
@@ -198,17 +250,21 @@ header nav{
 .plan_type_team .col_70{
     float:left;
     width: 70%;
-    height: 10rem;
-    background-color: darkkhaki;
+    height: 5rem;
+    background-color: rgb(22, 3, 127);
+    margin: 0;
+    padding: 2rem;
+}
+.plan_type_team h3{
+    float: left;
 }
 
 
 .plan_type_team .contact_office{
     float:left;
     width: 30%;
-    height: 10rem;
-    background-color: darkorchid;
-    border: darkslateblue solid;
+    height: 5rem;
+   padding: ;
 }
 /* /team section */
 
@@ -223,8 +279,7 @@ header nav{
 }
 .container_partner{
     width: 75%;
-    margin: 2rem auto;
-    background-color: brown;
+    margin: 0rem auto;
 }
 .row{
     width: 100%;
@@ -243,27 +298,48 @@ header nav{
 
 .col_50{
     float: left;
-    width: 45%;
-    /* margin-left: 10px; */
-    /* padding: 0 1rem;
-    margin: 0 -1rem; */
+    width: 40%;
     height: auto;
-    background-color: darkviolet;
-    border:tomato solid;
+    margin-top: 6rem;
+    margin-left: 3rem;
 }
 /* /partner_dropbox */
 
 
 /* *********DROPBOX OPERATIONs*********** */
+.row_operation{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.dropbox_operation h2{
+    font-size: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.col_33_operation{
+    float: left;
+    width:27%;
+    min-height: 40rem;
+    padding: 22px;
+}
 
 .operation_img{
-    width: 40%;
+    width: 88%;
     float: left;
-    margin-right: 10px;
+    margin-right: 2px;
+
+    }
+    .operation_text h3{
+      font-size: 2rem;
+      padding-bottom: 2rem;
     }
 .operation_img> img{
-     width: 70%;
+    width: 118%;
      height: auto; 
+     text-align: center;
     }
 .team_dropbox{
     width: 100%;
@@ -284,17 +360,25 @@ header nav{
 
 .members_dropbox,
 .row_members .left_square, .row_members .right_square, .designit{
-    height: 29rem;}
+    height: 40rem;}
 
 .left_square, .right_square{
-    width: 29rem;    
+    width: 40rem;    
+}
+.left_square img, .right_square img{
+    position:relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    filter: invert();
+        
 }
 .left_square{
     background-color: chocolate;
     float: left;
 }
 .designit{
-    width: 37.2rem;
+    width: 64rem;
     float: left;
     background-color: darkgray;
 }
@@ -307,14 +391,12 @@ header nav{
     width: 50%;
     height: 50%;
     float: left;
-    color: fuchsia;
     border: green solid;
     }
 
 .members_img> img{
      width: 50%;
-     height: 50%;
-     height: auto; border: gold solid;     
+     height: 50%;     
     }
     .logo_d{
         width: 100%;
@@ -330,6 +412,37 @@ header nav{
     .text_designit> p{
         margin: 3rem;
     }
+    .designit_img{
+        background-color: rgba(162, 211, 155, 1);
+        fill: white;
+    
+    }
+    .arizona{
+        background-color: rgba(97, 8, 43, 1);
+        fill: white;
+    }
+    .florida{
+        background-color:rgba(0, 147, 206, 1) ;
+    }
+    .topps{
+        background-color:rgba(255, 28, 28, 1) ;
+    }
+.bicycle{
+    background-color:rgba(213, 0, 31, 1) ;
+}
+.hearst{
+    background-color: rgba(180, 208, 231, 1);
+}
+.lonely{
+    background-color:rgba(13, 36, 129, 1) ;
+}
+.clear{
+    background-color:rgba(255, 216, 48, 1) ;
+}
+
+
+
+
 
     /* /members_dropbox */
 
@@ -383,10 +496,27 @@ footer{
 .col_20{
     width: 17%;
     height: 19rem;
-    background-color: blue;
     float: left;
     margin-right: 2rem;
+    line-height: 2rem;
 }
 .col_20 ul{
     margin-top: 2rem;
 }
+
+.col_20 a{
+    color: white;
+    text-decoration: none;
+}
+.col_20 h5{
+    font-size: 1.7rem;
+}
+footer .row{
+    margin: 0 auto;
+}
+
+
+.row_90{
+    width: 90%;
+    height: auto;
+    margin: 5rem auto;
