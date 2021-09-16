@@ -36,21 +36,38 @@ header{
     display: inline-block;
     line-height:3rem ;
     vertical-align: middle;
+    font-size: 23px;
 }
 
 .logo_site{
     width: 10%;
-    background-color: darkmagenta;
+    
     float: left;
     line-height:3rem;
     vertical-align: middle;
+    margin-left: 1px;
+
 }
+/* .logo{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate (-50%, -50%);} */
+    
+
+
 
 .left-nav{
     width: 45%;
     background-color:cornflowerblue;
     text-align: left;
     float:left;
+}
+.right-nav{
+    width: 45%;
+background-color: darkcyan;
+text-align: right;
+float: left;
 }
 header li{
     list-style: none;
@@ -61,12 +78,7 @@ header li{
 header a{
     text-decoration: none;
 }
-.right-nav{
-    width: 45%;
-background-color: darkcyan;
-text-align: right;
-float: left;
-}
+
 header nav{
     vertical-align: middle;
 }
